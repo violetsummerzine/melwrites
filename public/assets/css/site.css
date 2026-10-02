@@ -349,9 +349,11 @@ h1, h2, h3, h4 { margin: 0; font-weight: 400; letter-spacing: -0.015em; line-hei
 
 .cs-quote { grid-column: 3 / span 9; padding-top: clamp(64px, 8vw, 128px); }
 .cs-quote blockquote { margin: 0; font-size: var(--step-3); line-height: 1.2; letter-spacing: -0.02em; text-wrap: balance; }
-.cs-quote blockquote::before { content: "“"; color: var(--accent); margin-left: -0.45em; }
+.cs-quote blockquote p { display: inline; margin: 0; }
+.cs-quote blockquote { position: relative; }
+.cs-quote blockquote::before { content: "“"; color: var(--accent); position: absolute; left: 0; top: 0; transform: translateX(-100%); }
 .cs-quote figcaption { margin-top: 24px; }
-@media (max-width: 900px) { .cs-quote { grid-column: 1 / -1; } .cs-quote blockquote::before { margin-left: 0; } }
+@media (max-width: 900px) { .cs-quote { grid-column: 1 / -1; } }
 
 .stats { grid-column: 1 / -1; display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--gutter); padding-top: clamp(64px, 8vw, 128px); }
 .stat { border-top: 1px solid var(--ink); padding-top: 14px; }
@@ -362,6 +364,7 @@ h1, h2, h3, h4 { margin: 0; font-weight: 400; letter-spacing: -0.015em; line-hei
 
 /* Data science project blocks */
 .project { padding-top: clamp(72px, 9vw, 140px); }
+.project--feature .project__title { font-size: var(--step-4); letter-spacing: -0.035em; }
 .project__head { border-top: 1px solid var(--ink); padding-top: 14px; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
 .project__title { font-size: var(--step-3); letter-spacing: -0.025em; margin: clamp(20px, 2.4vw, 32px) 0 clamp(28px, 3.5vw, 48px); max-width: 22ch; text-wrap: balance; }
 .spec { grid-column: 1 / span 5; margin: 0; min-width: 0; }
