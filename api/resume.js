@@ -5,7 +5,7 @@ const path = require("path");
 
 const VERIFY_URL = "https://challenges.cloudflare.com/turnstile/v0/siteverify";
 const RESUME_PATH = path.join(process.cwd(), "private", "resume.pdf");
-const DOWNLOAD_NAME = process.env.RESUME_FILENAME || "Melissa-Resume.pdf";
+const DOWNLOAD_NAME = process.env.RESUME_FILENAME || "Melissa-Henderson-Resume.pdf";
 // Cloudflare's public test secret: always passes. Only used outside production.
 const TEST_SECRET = "1x0000000000000000000000000000000AA";
 

@@ -1,6 +1,6 @@
-# Mel Writes — Portfolio
+# Melissa Henderson — Portfolio
 
-A minimal, bright, static portfolio site: home page (statement, selected work, about, résumé, contact) plus three case study pages with image, YouTube, native video, audio and paste-in embed support. The résumé download is protected by a [Cloudflare Turnstile](https://www.cloudflare.com/products/turnstile/) CAPTCHA, verified server-side.
+A minimal, bright, static portfolio site: home page (positioning, selected work, about, areas of focus, what I'm thinking about, résumé, contact) plus four project pages with image, YouTube, native video, audio, code-snippet and paste-in embed support. The résumé download is protected by a [Cloudflare Turnstile](https://www.cloudflare.com/products/turnstile/) CAPTCHA, verified server-side.
 
 No framework and no build step: plain HTML, CSS and JavaScript, plus one serverless function.
 
@@ -9,7 +9,7 @@ No framework and no build step: plain HTML, CSS and JavaScript, plus one serverl
 ```
 public/                 ← everything served to visitors
   index.html            home page
-  work/case-study-0X.html  three case studies
+  work/*.html          four project pages (Violet Verse, Open Payments, AI / Human Data, Data Science & ML)
   assets/css/site.css   all styles (design tokens at the top)
   assets/js/site.js     YouTube loader, audio player, reveal, résumé download
   assets/img/           placeholder images — replace with your own
@@ -28,10 +28,10 @@ npm run dev     # → http://localhost:3000
 
 ## Customizing
 
-- **Text:** edit `public/index.html` and `public/work/*.html`. Everything that looks like a placeholder (“Project Title One”, “Client Name”, location “New York”, social links) is meant to be replaced.
+- **Text:** edit `public/index.html` and `public/work/*.html`. Everything that looks like a placeholder (“Add years”, “Add a sentence or two here…”, the data science project write-ups, social links, “Photo: Name”) is meant to be replaced.
 - **Colors & type:** change the tokens at the top of `site.css` (`--accent` is the bright orange).
 - **Images:** drop files in `public/assets/img/` and update the `src` (keep `width`/`height` roughly correct to avoid layout shift).
-- **Résumé:** replace `private/resume.pdf`. The download filename is set by the `RESUME_FILENAME` env var (default `Melissa-Resume.pdf`).
+- **Résumé:** replace `private/resume.pdf`. The download filename is set by the `RESUME_FILENAME` env var (default `Melissa-Henderson-Resume.pdf`).
 
 ### Media in case studies
 
@@ -41,8 +41,9 @@ npm run dev     # → http://localhost:3000
 | Any embed code | Paste the `<iframe>` inside `<div class="embed">…</div>` (16:9). For fixed-height embeds such as Spotify or SoundCloud use `class="embed embed--auto"`. |
 | Video file | `<video controls poster="…"><source src="/assets/media/your.mp4" type="video/mp4"></video>` inside `<div class="video">`. |
 | Audio file | `<figure class="audio" data-title="…"><audio controls src="/assets/media/your.mp3"></audio></figure>` — upgraded to the custom player automatically. |
+| Code snippet | `<figure class="code">` with a `<pre><code>` block — see `work/data-science.html`. |
 
-Examples of each are in the three case study pages.
+The project pages include working examples of the YouTube, embed, audio and code components.
 
 ## Résumé CAPTCHA setup (required before going live)
 

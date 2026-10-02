@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Data Science &amp; Machine Learning — Melissa Henderson</title>
+  <meta name="description" content="Data Science &amp; Machine Learning: projects in regression, classification, exploratory analysis, SQL, and data visualization.">
+  <meta name="theme-color" content="#ffffff">
+  <meta property="og:title" content="Data Science &amp; Machine Learning — Melissa Henderson">
+  <meta property="og:description" content="Data Science &amp; Machine Learning: projects in regression, classification, exploratory analysis, SQL, and data visualization.">
+  <meta property="og:type" content="article">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500&family=IBM+Plex+Mono:wght@400&display=swap">
+  <link rel="stylesheet" href="/assets/css/site.css">
+  <script src="/assets/js/site.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <div class="meta-strip">
+    <div class="wrap">
+      <span class="label"><span class="dot" aria-hidden="true"></span>Open to product, data &amp; AI roles</span>
+      <div class="meta-strip__group">
+        <span class="label meta-strip__hide-sm">10-month intensive program</span>
+        <span class="label">Project 04 / 04</span>
+      </div>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="wordmark" href="/">Melissa Henderson</a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="/#work" aria-current="page">Work</a>
+        <a href="/#about">About</a>
+        <a href="/#thinking">Thinking</a>
+        <a href="/#resume">Résumé</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="cs-hero wrap">
+      <div class="crumbs">
+        <a class="label label--ink" href="/#work"><span class="arrow" aria-hidden="true">←</span> All work</a>
+        <span class="label">Project 04 / 04</span>
+      </div>
+      <h1 class="cs-title reveal">Data Science &amp; Machine Learning</h1>
+      <div class="grid">
+        <p class="cs-lede reveal">Applied Python, SQL, statistics, machine learning, and analytical methods to real-world datasets and modeling problems — and came out obsessed with regression models.</p>
+        <dl class="cs-facts reveal">
+          <div><dt class="label">Program</dt><dd>Data Science &amp; ML</dd></div>
+          <div><dt class="label">Length</dt><dd>10 months</dd></div>
+          <div><dt class="label">Tools</dt><dd>Python · SQL · scikit-learn</dd></div>
+          <div><dt class="label">Methods</dt><dd>Regression, classification, EDA</dd></div>
+        </dl>
+      </div>
+      <figure class="figure cs-cover reveal">
+        <div class="figure__media ratio-16x10"><img src="/assets/img/cs4-hero.svg" alt="Hero image for Data Science &amp; Machine Learning" width="1600" height="1000"></div>
+        <figcaption><span class="label">Fig. 4.0 — Data Science &amp; ML</span><span class="label">Replace with your image</span></figcaption>
+      </figure>
+    </section>
+
+    <section class="chapter wrap">
+      <div class="grid">
+        <div class="chapter__label"><span class="label label--ink">Program</span></div>
+        <div class="chapter__body reveal">
+          <h2>Why I went deeper</h2>
+          <p>I completed a 10-month Data Science &amp; Machine Learning program, where I developed a stronger foundation in Python, SQL, statistics, machine learning, and data analysis — and discovered that I genuinely enjoy getting into the weeds.</p>
+          <p>Below are the projects that show how I work: the question, the data, the model, how I evaluated it, and what decision it would inform.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="project wrap">
+      <div class="project__head"><span class="label label--ink">Project 01</span><span class="label">Regression</span></div>
+      <h2 class="project__title reveal">Project title — what you predicted and why it mattered</h2>
+      <div class="grid">
+        <div class="spec reveal">
+          <dl>
+            <div><dt class="label">Question</dt><dd>What were you trying to predict or explain?</dd></div>
+            <div><dt class="label">Data</dt><dd>Dataset name, source, rows × columns.</dd></div>
+            <div><dt class="label">Approach</dt><dd>Cleaning, features, and the model(s) you tried.</dd></div>
+            <div><dt class="label">Evaluation</dt><dd>Metrics and validation — and how you checked it wasn’t fooling you.</dd></div>
+            <div><dt class="label">Result</dt><dd>What the model found, in plain language.</dd></div>
+            <div><dt class="label">Decision</dt><dd>What the analysis would inform, and for whom.</dd></div>
+            <div><dt class="label">Learned</dt><dd>The thing you’d do differently next time.</dd></div>
+          </dl>
+          <div class="tags" style="margin-top:16px"><span>Python</span><span>pandas</span><span>scikit-learn</span><span>Regression</span><span>Feature selection</span></div>
+        </div>
+        <div class="project__media">
+        <figure class="figure reveal">
+          <div class="figure__media ratio-16x10"><img src="/assets/img/cs4-regression.svg" alt="Predicted versus actual values for the regression model" width="1600" height="1000" loading="lazy"></div>
+          <figcaption><span class="label">Fig. 4.1 — Predicted vs. actual</span></figcaption>
+        </figure>
+          <figure class="code reveal">
+            <div class="code__bar"><span class="label">model.py</span><span class="label">Python</span></div>
+<pre><code><span class="k">from</span> sklearn.linear_model <span class="k">import</span> LinearRegression
+<span class="k">from</span> sklearn.model_selection <span class="k">import</span> train_test_split
+<span class="k">from</span> sklearn.metrics <span class="k">import</span> r2_score, mean_squared_error
+
+<span class="c"># Replace with your own code — keep it short and readable</span>
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=<span class="k">0.2</span>, random_state=<span class="k">42</span>)
+model = LinearRegression().fit(X_train, y_train)
+pred = model.predict(X_test)
+print(r2_score(y_test, pred), mean_squared_error(y_test, pred) ** <span class="k">0.5</span>)</code></pre>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="project wrap">
+      <div class="project__head"><span class="label label--ink">Project 02</span><span class="label">Classification</span></div>
+      <h2 class="project__title reveal">Project title — what you classified and the cost of getting it wrong</h2>
+      <div class="grid">
+        <div class="spec reveal">
+          <dl>
+            <div><dt class="label">Question</dt><dd>What were you classifying, and which errors mattered most?</dd></div>
+            <div><dt class="label">Data</dt><dd>Dataset name, source, rows × columns.</dd></div>
+            <div><dt class="label">Approach</dt><dd>Cleaning, features, and the model(s) you tried.</dd></div>
+            <div><dt class="label">Evaluation</dt><dd>Metrics and validation — and how you checked it wasn’t fooling you.</dd></div>
+            <div><dt class="label">Result</dt><dd>What the model found, in plain language.</dd></div>
+            <div><dt class="label">Decision</dt><dd>What the analysis would inform, and for whom.</dd></div>
+            <div><dt class="label">Learned</dt><dd>The thing you’d do differently next time.</dd></div>
+          </dl>
+          <div class="tags" style="margin-top:16px"><span>Python</span><span>Classification</span><span>Model evaluation</span><span>Precision / recall</span></div>
+        </div>
+        <div class="project__media">
+        <figure class="figure reveal">
+          <div class="figure__media ratio-16x10"><img src="/assets/img/cs4-matrix.svg" alt="Confusion matrix for the classification model" width="1600" height="1000" loading="lazy"></div>
+          <figcaption><span class="label">Fig. 4.2 — Confusion matrix</span></figcaption>
+        </figure>
+        <figure class="figure reveal">
+          <div class="figure__media ratio-16x10"><img src="/assets/img/cs4-features.svg" alt="Feature importance chart" width="1600" height="1000" loading="lazy"></div>
+          <figcaption><span class="label">Fig. 4.3 — Feature importance</span></figcaption>
+        </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="project wrap">
+      <div class="project__head"><span class="label label--ink">Project 03</span><span class="label">Exploratory analysis · SQL</span></div>
+      <h2 class="project__title reveal">Project title — what the data revealed</h2>
+      <div class="grid">
+        <div class="spec reveal">
+          <dl>
+            <div><dt class="label">Question</dt><dd>What did you want to understand about the data?</dd></div>
+            <div><dt class="label">Data</dt><dd>Dataset name, source, rows × columns.</dd></div>
+            <div><dt class="label">Approach</dt><dd>Cleaning, features, and the model(s) you tried.</dd></div>
+            <div><dt class="label">Evaluation</dt><dd>Metrics and validation — and how you checked it wasn’t fooling you.</dd></div>
+            <div><dt class="label">Result</dt><dd>What the model found, in plain language.</dd></div>
+            <div><dt class="label">Decision</dt><dd>What the analysis would inform, and for whom.</dd></div>
+            <div><dt class="label">Learned</dt><dd>The thing you’d do differently next time.</dd></div>
+          </dl>
+          <div class="tags" style="margin-top:16px"><span>SQL</span><span>EDA</span><span>Statistics</span><span>Data visualization</span></div>
+        </div>
+        <div class="project__media">
+          <figure class="code reveal">
+            <div class="code__bar"><span class="label">query.sql</span><span class="label">SQL</span></div>
+<pre><code><span class="c">-- Replace with your own query</span>
+<span class="k">SELECT</span> segment,
+       <span class="k">COUNT</span>(*)              <span class="k">AS</span> users,
+       <span class="k">AVG</span>(revenue)          <span class="k">AS</span> avg_revenue
+<span class="k">FROM</span>   customers
+<span class="k">GROUP BY</span> segment
+<span class="k">ORDER BY</span> avg_revenue <span class="k">DESC</span>;</code></pre>
+          </figure>
+          <!-- Notebook or dashboard embed: paste an iframe from Tableau Public, Observable, Hex, Deepnote, Google Colab, or a GitHub Gist -->
+          <figure class="figure reveal">
+            <div class="embed" style="display:grid;place-items:center;border:1px dashed var(--line)">
+              <span class="label">Paste a notebook or dashboard embed here</span>
+            </div>
+            <figcaption><span class="label">Fig. 4.4 — Interactive notebook or dashboard</span><span class="label">Embed</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter wrap">
+      <div class="grid">
+        <div class="chapter__label"><span class="label label--ink">Toolkit</span></div>
+        <div class="chapter__body reveal">
+          <h2>What I work with</h2>
+          <p>Python (pandas, NumPy, scikit-learn, matplotlib/seaborn) · SQL · Statistics · Regression · Classification · Feature selection · Model evaluation · Data visualization.</p>
+          <p>Find the full code on <a class="link" href="https://github.com/">GitHub</a>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap">
+      <a class="next-project" href="/work/violet-verse.html">
+        <span class="label label--ink">Next — Project 01</span>
+        <span class="next-project__title">Violet Verse <span class="arrow" aria-hidden="true">→</span></span>
+      </a>
+    </section>
+  </main>
+
+  <footer id="contact" class="site-footer">
+    <div class="wrap">
+      <div class="section-head__title"><span class="label label--ink">Contact</span></div>
+      <a class="contact-big" href="mailto:melissa@melwrites.com">melissa@melwrites.com</a>
+      <div class="footer-cols">
+        <div><span class="label">Elsewhere</span>
+          <ul><li><a class="link" href="https://www.linkedin.com/">LinkedIn</a></li><li><a class="link" href="https://x.com/">X</a></li><li><a class="link" href="https://substack.com/">Substack</a></li><li><a class="link" href="https://github.com/">GitHub</a></li></ul>
+        </div>
+        <div><span class="label">Work</span>
+          <ul><li><a class="link" href="/work/violet-verse.html">Violet Verse</a></li><li><a class="link" href="/work/open-payments.html">Interledger / Open Payments</a></li><li><a class="link" href="/work/ai-human-data.html">AI / Human Data</a></li><li><a class="link" href="/work/data-science.html">Data Science &amp; Machine Learning</a></li></ul>
+        </div>
+        <div><span class="label">Sections</span>
+          <ul><li><a class="link" href="/#about">About</a></li><li><a class="link" href="/#focus">Areas of Focus</a></li><li><a class="link" href="/#thinking">Thinking</a></li></ul>
+        </div>
+        <div><span class="label">Résumé</span>
+          <ul><li><a class="link" href="/#resume">Download PDF</a></li></ul>
+        </div>
+      </div>
+      <div class="colophon">
+        <span class="label">© <span data-year>2026</span> Melissa Henderson</span>
+        <span class="label">Set in Figtree &amp; IBM Plex Mono</span>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
