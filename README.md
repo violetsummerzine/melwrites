@@ -30,6 +30,7 @@ npm run dev     # → http://localhost:3000
 
 - **Text:** edit `public/index.html` and `public/work/*.html`. Everything that looks like a placeholder (“Add years”, “Add a sentence or two here…”, the data science project write-ups, social links, “Photo: Name”) is meant to be replaced.
 - **Colors & type:** change the tokens at the top of `site.css` (`--accent` is the bright orange).
+- **After editing CSS or JS:** run `sh scripts/bust-cache.sh` so visitors' browsers load the new files instead of a cached copy.
 - **Images:** drop files in `public/assets/img/` and update the `src` (keep `width`/`height` roughly correct to avoid layout shift).
 - **Résumé:** replace `private/resume.pdf`. The download filename is set by the `RESUME_FILENAME` env var (default `Melissa-Henderson-Resume.pdf`).
 
