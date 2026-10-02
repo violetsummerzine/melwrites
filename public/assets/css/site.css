@@ -181,6 +181,13 @@ h1, h2, h3, h4 { margin: 0; font-weight: 400; letter-spacing: -0.015em; line-hei
 }
 @media (max-width: 900px) { .work-grid { grid-template-columns: 1fr 1fr; } }
 @media (max-width: 600px) { .work-grid { grid-template-columns: 1fr; } }
+.work-group + .work-group { margin-top: clamp(72px, 9vw, 128px); }
+.work-group__head {
+  display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 7fr) auto; gap: 8px var(--gutter); align-items: baseline;
+  border-top: 1px solid var(--line); padding-top: 12px; margin-bottom: clamp(24px, 3vw, 40px);
+}
+.work-group__intro { margin: 0; color: var(--ink-soft); font-size: 1rem; }
+@media (max-width: 700px) { .work-group__head { grid-template-columns: 1fr auto; } .work-group__intro { grid-column: 1 / -1; grid-row: 2; } }
 .work-card { display: block; }
 .work-card .figure__media img { transition: transform 1.1s var(--ease); }
 .work-card:hover .figure__media img { transform: scale(1.035); }
