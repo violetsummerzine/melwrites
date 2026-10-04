@@ -339,6 +339,10 @@ h1, h2, h3, h4 { margin: 0; font-weight: 400; letter-spacing: -0.015em; line-hei
 .chapter__body h2 { font-size: var(--step-2); margin-bottom: 0.7em; }
 .chapter__body p { color: var(--ink-soft); }
 .chapter__body p:first-of-type { color: var(--ink); }
+.bullets { list-style: none; padding: 0; margin: 0 0 1em; counter-reset: b; }
+.bullets li { position: relative; padding: 14px 0 14px 2.6em; border-top: 1px solid var(--line); color: var(--ink-soft); counter-increment: b; }
+.bullets li:last-child { border-bottom: 1px solid var(--line); }
+.bullets li::before { content: counter(b, decimal-leading-zero); position: absolute; left: 0; top: 17px; font-family: var(--font-mono); font-size: var(--step--1); letter-spacing: .06em; color: var(--accent); }
 @media (max-width: 900px) {
   .chapter__label, .chapter__body { grid-column: 1 / -1; }
   .chapter__label .label { position: static; margin-bottom: 20px; }

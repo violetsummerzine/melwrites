@@ -39,5 +39,17 @@
         }
       ]
     }
+  ],
+  "redirects": [
+    {
+      "source": "/work/ai-human-data",
+      "destination": "/work/mercor-scale",
+      "permanent": true
+    },
+    {
+      "source": "/work/ai-human-data.html",
+      "destination": "/work/mercor-scale",
+      "permanent": true
+    }
   ]
 }
