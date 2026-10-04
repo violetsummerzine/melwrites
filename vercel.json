@@ -50,6 +50,16 @@
       "source": "/work/ai-human-data.html",
       "destination": "/work/mercor-scale",
       "permanent": true
+    },
+    {
+      "source": "/work/ai-reading-companion",
+      "destination": "/work/joy-ai-agent",
+      "permanent": true
+    },
+    {
+      "source": "/work/ai-reading-companion.html",
+      "destination": "/work/joy-ai-agent",
+      "permanent": true
     }
   ]
 }
