@@ -1,6 +1,6 @@
 # Melissa Henderson — Portfolio
 
-A minimal, bright, static portfolio site: home page (positioning, selected work, about, areas of focus, what I'm thinking about, résumé, contact) plus four project pages with image, YouTube, native video, audio, code-snippet and paste-in embed support. The résumé download is protected by a [Cloudflare Turnstile](https://www.cloudflare.com/products/turnstile/) CAPTCHA, verified server-side.
+A minimal, bright, static portfolio site: home page (positioning, selected work, about, areas of focus, what I'm thinking about, résumé, contact) plus six project pages with image, YouTube, native video, audio, code-snippet and paste-in embed support. The résumé download is protected by a [Cloudflare Turnstile](https://www.cloudflare.com/products/turnstile/) CAPTCHA, verified server-side.
 
 No framework and no build step: plain HTML, CSS and JavaScript, plus one serverless function.
 
@@ -9,13 +9,14 @@ No framework and no build step: plain HTML, CSS and JavaScript, plus one serverl
 ```
 public/                 ← everything served to visitors
   index.html            home page
-  work/*.html          four project pages (Violet Verse, Open Payments, AI / Human Data, Data Science & ML)
+  work/*.html          six project pages (Violet Verse, Moonbeam, ApeWorX, Joy AI Agent, Mercor / Scale, Data Science & ML)
   assets/css/site.css   all styles (design tokens at the top)
   assets/js/site.js     YouTube loader, audio player, reveal, résumé download
   assets/img/           placeholder images — replace with your own
   assets/media/         sample video/audio — replace with your own
 api/resume.js           verifies the CAPTCHA, then sends the PDF
 private/resume.pdf      your résumé (not publicly reachable)
+drafts/work/            case studies held back from the site (SKALE, Open Payments) — move back into public/work/ to restore
 vercel.json             hosting config
 dev-server.mjs          local preview server
 ```
