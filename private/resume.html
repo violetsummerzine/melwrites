@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Melissa Henderson — Résumé</title>
+<style>
+  @font-face { font-family: Figtree; font-weight: 300 900; src: url(fonts/figtree.woff2) format("woff2"); }
+  @font-face { font-family: "IBM Plex Mono"; font-weight: 400; src: url(fonts/ibm-plex-mono.woff2) format("woff2"); }
+  @page { size: Letter; margin: 0.45in 0.55in 0.45in; }
+  :root { --ink: #111; --soft: #444; --mute: #777; --line: #d9d9d9; --accent: #ff5a1f; }
+  * { box-sizing: border-box; }
+  html { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  body { margin: 0; font-family: Figtree, system-ui, sans-serif; font-size: 9.1pt; line-height: 1.36; color: var(--soft); }
+  a { color: inherit; text-decoration: none; }
+  .mono { font-family: "IBM Plex Mono", ui-monospace, monospace; font-size: 7.4pt; letter-spacing: .06em; text-transform: uppercase; color: var(--mute); }
+
+  header { display: flex; justify-content: space-between; align-items: flex-end; padding-bottom: 12pt; border-bottom: 1.2pt solid var(--ink); }
+  h1 { margin: 0; font-weight: 500; font-size: 25pt; letter-spacing: -.02em; line-height: 1; color: var(--ink); }
+  .role { white-space: nowrap; margin-top: 6pt; color: var(--ink); font-size: 10.5pt; }
+  .role .dot { display: inline-block; width: 6pt; height: 6pt; border-radius: 50%; background: var(--accent); margin-right: 5pt; vertical-align: 1pt; }
+  .contact { text-align: right; line-height: 1.6; white-space: nowrap; }
+
+  section { margin-top: 10pt; }
+  h2 { margin: 0 0 6pt; padding-bottom: 3pt; border-bottom: .6pt solid var(--line); }
+  .summary { color: var(--ink); font-size: 9.6pt; line-height: 1.45; margin: 0; }
+
+  .job { margin-top: 6pt; break-inside: avoid; }
+  .job__head { display: flex; justify-content: space-between; align-items: baseline; gap: 12pt; }
+  .job__title { color: var(--ink); font-weight: 600; font-size: 10pt; }
+  .job__title span { font-weight: 400; color: var(--soft); }
+  .job__date { white-space: nowrap; }
+  ul { margin: 3pt 0 0; padding-left: 11pt; }
+  li { margin: 1pt 0; padding-left: 1pt; }
+  li::marker { color: var(--accent); }
+  b { font-weight: 600; color: var(--ink); }
+
+  .projects { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12pt; }
+  .project { border-top: 1.2pt solid var(--ink); padding-top: 5pt; }
+  .project .job__title { display: block; margin: 3pt 0 2pt; }
+  .project p { margin: 0; }
+
+  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 18pt; }
+  .edu p { margin: 0 0 4pt; }
+  .skills p { margin: 0 0 4pt; }
+  .skills b { display: inline; }
+</style>
+</head>
+<body>
+  <header>
+    <div>
+      <h1>Melissa Henderson</h1>
+      <div class="role"><span class="dot"></span>Product Strategist &amp; Technologist · Product · Data · AI · Fintech</div>
+    </div>
+    <div class="contact mono">
+      <div><a href="mailto:melissa@melwrites.com">melissa@melwrites.com</a></div>
+      <div><a href="https://melwrites.com">melwrites.com</a></div>
+      <div><a href="https://www.linkedin.com/in/melissa-a-henderson/">linkedin.com/in/melissa-a-henderson</a></div>
+      <div><a href="https://github.com/violetsummerzine">github.com/violetsummerzine</a></div>
+    </div>
+  </header>
+
+  <section>
+    <h2 class="mono">Summary</h2>
+    <p class="summary">Product strategist and technologist with 10+ years turning emerging technology into products people understand and adopt. Founder of Violet Verse, a decentralized publishing platform built 0→1; winner of a Vercel hackathon for Joy AI Agent; and an AI evaluation reviewer on RLHF projects for frontier AI labs. Combines formal training in data science, machine learning, and agentic AI with a track record of launching products and partnerships across AI, blockchain, and fintech ecosystems alongside engineers, researchers, and executives.</p>
+  </section>
+
+  <section>
+    <h2 class="mono">Selected Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <span class="mono">Founder · 2022</span>
+        <span class="job__title">Violet Verse</span>
+        <p>Led a decentralized content management system from concept to launch: Web3 wallet login, crypto tipping, and native-token rewards for readers and writers.</p>
+      </div>
+      <div class="project">
+        <span class="mono">Hackathon winner · 2026</span>
+        <span class="job__title">Joy AI Agent</span>
+        <p>AI reading companion built into Violet Verse with v0 that adapts one Web3 article for four audiences. Won a Vercel hackathon in Miami.</p>
+      </div>
+      <div class="project">
+        <span class="mono">In progress</span>
+        <span class="job__title">Project Athena</span>
+        <p>Research and prototype testing whether structured education helps creators produce higher-quality AI training and evaluation data.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="mono">Experience</h2>
+
+    <div class="job">
+      <div class="job__head"><div class="job__title">Interledger Technology <span>· Digital Marketing Lead (Contract)</span></div><div class="job__date mono">Apr 2026 – Present</div></div>
+      <ul>
+        <li>Leading the HubSpot implementation and CRM transformation across events, developer relations, partnerships, and business teams, standardizing reporting and overseeing a large-scale data migration and cleanup from Mailchimp using Snowflake.</li>
+        <li>Leading “Open Payments Learning Month,” a go-to-market and education campaign driving developer adoption of an open standard for interoperable digital payments.</li>
+        <li>Built and launched, with AI-assisted development, a multi-channel education system of 3 landing pages, 8 educational emails, 3 forms, and automated engagement flows, achieving a <b>65% open rate</b> and <b>~59% click-through rate</b>.</li>
+        <li>Generated <b>530K+ social impressions</b> across developer and fintech audiences using gamified distribution tactics.</li>
+        <li>Rebuilding the social media and communications workflow on Linear, Slack, and Google Workspace to scale content across the organization.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job__head"><div class="job__title">Mercor <span>· AI Operations &amp; Evaluation Reviewer (Contract)</span></div><div class="job__date mono">Nov 2025 – Present</div></div>
+      <ul>
+        <li>Evaluate model outputs and contribute to human-feedback and quality-assurance workflows used to improve AI performance and reliability, collaborating with machine learning engineers and AI practitioners.</li>
+        <li>Provide structured feedback on proprietary research projects for leading frontier AI labs, applying domain expertise in marketing, sales, business, and new media.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job__head"><div class="job__title">GWU Bitcoin Academic Center (BTCinDC) <span>· Advisor</span></div><div class="job__date mono">Jun 2025 – Nov 2025</div></div>
+      <ul>
+        <li>Secured a <b>six-figure sponsorship from Block</b> (Square, Cash App, Bitkey) within about two months, from identifying the relationship and building sponsorship materials through negotiation and close.</li>
+        <li>Organized and led Block’s <b>first closed-door briefing with U.S. Rep. Warren Davidson (R-OH)</b>; created the agenda and led the discussion. The meeting earned coverage in <i>The Block</i>, and Rep. Davidson went on to collaborate with Block on a de minimis tax exemption.</li>
+        <li>Curated the BTCinDC panel and supported programming for an event featuring Michael Saylor, Sen. Cynthia Lummis, and Adam Back.</li>
+        <li>Recruited and onboarded 5 students, created an intern operating process and Notion workspace, and led 12+ weekly strategy calls.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job__head"><div class="job__title">Moonbeam Network &amp; Foundation <span>· Global Marketing Manager</span></div><div class="job__date mono">Jul 2024 – Aug 2025</div></div>
+      <ul>
+        <li>Launched Moonrise Points, a custom questing platform that attracted developers and DeFi traders across Ethereum, Solana, and Polkadot, contributing to a <b>30% increase in GLMR token price</b> within two months; partnered with exchanges including Coinbase and ran the influencer strategy.</li>
+        <li>Led product marketing and launch for DataHaven.xyz, overseeing naming, visual identity, the landing page, litepaper, and a messaging framework positioning it at the intersection of AI, privacy, and blockchain infrastructure.</li>
+        <li>Drove an <b>80% increase in traffic</b> across web, social, and newsletter channels with 100+ pieces of content tied to protocol releases, technical integrations, and developer relations.</li>
+        <li>Built on-chain data storytelling with research and analytics partners including Messari, Artemis, and Dune; managed campaign planning, budget, and performance measurement.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job__head"><div class="job__title">Flow Blockchain <span>· Marketing &amp; Communications Manager (Contract)</span></div><div class="job__date mono">Apr 2024 – Jun 2024</div></div>
+      <ul>
+        <li>Delivered marketing analytics and trend reports to the Head of Product to inform Product and Engineering decisions.</li>
+        <li>Supported go-to-market for Flow’s move to EVM equivalence, including a developer launch page that drove a <b>50% increase in traffic</b> and a <b>72% return rate</b> among builders.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job__head"><div class="job__title">SKALE Labs <span>· Marketing Generalist (Contract)</span></div><div class="job__date mono">Jul 2023 – Mar 2024</div></div>
+      <ul>
+        <li>Delivered weekly social data reports and growth tactics against quarterly OKRs; secured coverage in CoinDesk, Bloomberg, and CCN within three months and managed C-suite briefings and speaking engagements.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job__head"><div class="job__title">Scale AI <span>· Marketing Expert (Contract)</span></div><div class="job__date mono">Dec 2023 – Mar 2024</div></div>
+      <ul>
+        <li>Assessed LLM reasoning through reinforcement learning from human feedback (RLHF), consistently earning 5/5 ratings for responses that outperformed the model.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job__head"><div class="job__title">ApeWorX <span>· Head of Community &amp; Content</span></div><div class="job__date mono">Nov 2021 – Mar 2023</div></div>
+      <ul>
+        <li>Built the editorial calendar around GitHub releases for Ape, an open-source Python framework for smart contracts, and ran all content channels for Python developers, data scientists, and security professionals.</li>
+        <li>Launched partnerships with Yearn Finance, StarkNet, the Python Software Foundation, and the Ethereum Foundation, and managed a community of open-source contributors.</li>
+      </ul>
+    </div>
+
+    <div class="job">
+      <div class="job__head"><div class="job__title">G/O Media (formerly Gawker Media) <span>· Senior Marketing Strategist</span></div><div class="job__date mono">Aug 2019 – Oct 2021</div></div>
+      <ul>
+        <li>Sold <b>$2.5M</b> in creative sponsorships, high-impact media, and native content in 18 months for clients including Netflix, Nike, Samsung, Epic Games, Fidelity, and Cash App; led strategy on six-figure RFPs.</li>
+        <li>Led content strategy for The Root Institute, a Webby-nominated virtual event (2020, 2021).</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="two">
+    <div class="edu">
+      <h2 class="mono">Education &amp; Training</h2>
+      <p><b>The George Washington University</b> — B.A., Political Communications</p>
+      <p><b>Universidad de Santiago de Compostela</b> — Study abroad, Advanced Spanish Literature</p>
+      <p><b>Harvard Data Science Initiative</b> — Agentic AI Certification, 2025</p>
+      <p><b>Miami Foundation Academy</b> — Data Science &amp; Machine Learning Certification, in progress (2026)</p>
+    </div>
+    <div class="skills">
+      <h2 class="mono">Skills</h2>
+      <p><b>Product &amp; GTM:</b> product strategy, go-to-market, launches, user research, partnerships, technical communication</p>
+      <p><b>Data &amp; AI:</b> Python, SQL, statistics, regression, model evaluation, RLHF, Snowflake, Power BI, Dune</p>
+      <p><b>Web3:</b> Ethereum, Solana, Polkadot, DAOs, bug bounty and GitHub incentive programs</p>
+      <p><b>Tools:</b> v0, Lovable, GitHub, VS Code, HubSpot, Figma, Webflow, Linear, Notion, Mailchimp, Meltwater</p>
+    </div>
+  </section>
+
+  <section>
+    <h2 class="mono">Policy &amp; Advocacy</h2>
+    <p style="margin:0">Delegate, Women of Color in Blockchain Congressional Briefing, Capitol Hill (December 2025)</p>
+  </section>
+</body>
+</html>
