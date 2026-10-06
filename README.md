@@ -33,7 +33,7 @@ npm run dev     # → http://localhost:3000
 - **Colors & type:** change the tokens at the top of `site.css` (`--accent` is the bright orange).
 - **After editing CSS or JS:** run `sh scripts/bust-cache.sh` so visitors' browsers load the new files instead of a cached copy.
 - **Images:** drop files in `public/assets/img/` and update the `src` (keep `width`/`height` roughly correct to avoid layout shift).
-- **Résumé:** edit `private/resume.html`, then run `node scripts/build-resume.cjs` (needs Playwright) to regenerate `private/resume.pdf`. Or just replace the PDF. The download filename is set by the `RESUME_FILENAME` env var (default `Melissa-Henderson-Resume.pdf`).
+- **Résumé:** edit `private/resume.html`, then regenerate `private/resume.pdf` with `npm install --no-save playwright && npx playwright install chromium` (once) and `node scripts/build-resume.cjs`. Or just replace the PDF. The download filename is set by the `RESUME_FILENAME` env var (default `Melissa-Henderson-Resume.pdf`).
 
 ### Media in case studies
 

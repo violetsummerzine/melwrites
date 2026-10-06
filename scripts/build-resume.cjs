@@ -1,5 +1,7 @@
 // Renders private/resume.html to private/resume.pdf with headless Chromium.
-// Usage: node scripts/build-resume.cjs   (needs Playwright installed)
+// Usage (Playwright is not a project dependency, so the site deploy stays lean):
+//   npm install --no-save playwright && npx playwright install chromium
+//   node scripts/build-resume.cjs
 const path = require("path");
 const { chromium } = require("playwright");
 
